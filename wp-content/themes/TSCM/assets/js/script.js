@@ -102,8 +102,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const popupWindow = () => {
-        const modal = document.querySelector('.contact'),
-              modalClose = document.querySelector('.contact__close'),
+        const modal = document.querySelector('.modal'),
+              modalClose = document.querySelector('.modal__close'),
               openPopup = document.querySelector('#reply'),
               popup = document.querySelector('.popup'),
               popupClose = document.querySelector('.popup__close'),

@@ -6,7 +6,7 @@
 				<div class="footer__logo">
 					<?php the_custom_logo(); ?>
 				</div>
-				<p><?php the_field('footer_about'); ?></p>
+				<p><?php the_field('footer_about', 2); ?></p>
 				<a href="#" class="footer__more">
 					Read More
 					<svg display="none">
@@ -21,8 +21,7 @@
 					</svg>
 				</a>
 			</li>
-			<li class="footer__links" data-aos="fade-up"
-			    data-aos-duration="800">
+			<li class="footer__links" data-aos="fade-up" data-aos-duration="800">
 				<h2 class="footer__title">Shortcuts</h2>
 				<ul class="footer__links-container">
 					<li><a href="#">Home</a></li>
@@ -38,8 +37,9 @@
 				<ul class="footer__news">
 					<li class="footer__post">
 						<picture>
-							<source srcset="<?php echo bloginfo('template_url');?>/img/pictures/post-img.webp" type="image/webp">
-							<img src="<?php echo bloginfo('template_url');?>/img/pictures/post-img.png" alt="post">
+							<source srcset="<?php echo bloginfo('template_url');?>/assets/img/pictures/post-img.webp" type="image/webp">
+							<img src="<?php echo bloginfo('template_url');
+							?>/assets/img/pictures/post-img.png" alt="post">
 						</picture>
 						<div class="footer__post-container">
 							<h3>Lorem Security the men sefty</h3>
@@ -47,8 +47,8 @@
 					</li>
 					<li class="footer__post">
 						<picture>
-							<source srcset="<?php echo bloginfo('template_url');?>/img/pictures/post-img.webp" type="image/webp">
-							<img src="<?php echo bloginfo('template_url');?>/img/pictures/post-img.png" alt="post">
+							<source srcset="<?php echo bloginfo('template_url'); ?>/assets/img/pictures/post-img.webp" type="image/webp">
+							<img src="<?php echo bloginfo('template_url'); ?>/assets/img/pictures/post-img.png" alt="post">
 						</picture>
 						<div class="footer__post-container">
 							<h3>Lorem Security the men sefty</h3>
@@ -71,7 +71,7 @@
 						<svg>
 							<use href="#location"></use>
 						</svg>
-						<span><?php the_field('company_location'); ?></span>
+						<span><?php the_field('company_location', 2); ?></span>
 					</a>
 					<a href="tel:+651800123145">
 						<svg display="none">
@@ -84,7 +84,7 @@
 						<svg>
 							<use href="#tel"></use>
 						</svg>
-						<span><?php the_field('company_number'); ?></span>
+						<span><?php the_field('company_number', 2); ?></span>
 					</a>
 					<a href="#" class="footer__email">
 						<svg display="none">
@@ -105,7 +105,7 @@
 	</div>
 	<div class="footer__bottom">
 		<div class="container">
-			<div class="footer__bottom-info">© 2021 <span><?php the_field('company_name'); ?></span></div>
+			<div class="footer__bottom-info">© 2021 <span><?php the_field('company_name', 2); ?></span></div>
 			<div class="header__social">
 				<a href="#" class="header__facebook header__icon">
 					<svg>
